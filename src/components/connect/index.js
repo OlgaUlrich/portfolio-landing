@@ -21,8 +21,10 @@ align-items: center;
 
 @media only screen and (max-width: 1026px) {
     font-size: 1em;
-    padding-bottom: 40%;
+    padding-bottom: 50%;
+
     height: 110vh;
+
     }
 
 
@@ -82,6 +84,7 @@ align-items: flex-start;
 
     @media only screen and (max-width: 1026px) {
         width:100%;
+      
   
         
         }
@@ -92,6 +95,7 @@ align-items: flex-start;
         flex-direction: column;
         width: 100%;
         height: 80%;
+
         label{
             margin-top: 1em;
         }

@@ -8,25 +8,37 @@ import lnkd from './svg/lnk.svg'
 const FooterNav = styled.footer`
 padding-top: 1.5em;
 width: 100%;
+
 display: flex;
 color: ${global.colorText};
 background-color: ${global.colorSecondMain};
 justify-content: center;
 align-items: center;
+align-self: flex-end;
 
 @media only screen and (max-width: 1026px) {
-
+   min-height: 20%;
     font-size: 0.8em;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: flex-start;
     align-items: flex-start;
-    
+    text-align: center;
+  
     }
 
 .container{
-    width: 90%;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0 1em 1em 1em;
+
+    @media only screen and (max-width: 1026px) {
+        justify-content: center;
+        align-items: center;
+        padding:0;
+       
+         }
 }
 
 
@@ -42,6 +54,7 @@ align-items: center;
     display: flex;
     align-items: center;
     justify-content: center;
+
 }
 
 img{
