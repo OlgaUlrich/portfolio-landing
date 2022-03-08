@@ -24,6 +24,7 @@ export const GlobalStyle = createGlobalStyle`
 
 body, html{
     height: 100vh;
+    background-color: ${colorMain};
 }
 
 body{
