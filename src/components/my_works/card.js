@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import styled from 'styled-components'
 import * as global from '../../GlobalStyle';
+import figma from "../about_me/svgs/6.svg";
+import repo from "./jpg/gth.svg";
 
 
 
@@ -33,23 +35,51 @@ const Wrapper = styled.div`
     
 
         @media only screen and (max-width: 1026px) {
-            max-width: 200px;
-            height: 100px;
+            max-width: 90%;
+            min-height: 100px;
             }
 
             @media only screen and (max-width: 600px) {
-                max-width: 100px;
-                height: 80px;
+                max-width: 90%;
+                min-height: 80px;
                 }
      
     }
     .bottom{
-        width: 100%;
-        height: 50%;
+      
+        padding: 1rem;
+
 
         .textWrapper{
-            padding: 0.5em;
+           
         }
+
+        .description{
+            padding-top: 2rem;
+            padding-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+
+        img{
+            width:1.5rem;
+        }
+
+        .stack{
+            background-color: ${global.colorAccent};
+            padding:0.1em;
+            border-radius: 0.5rem;
+            margin-right: 0.5em;
+            font-size: 1rem;
+            
+            @media only screen and (max-width: 1026px) {
+                margin-top: 0.3em;
+                }
+
+                &:last-child{
+                    margin-right: 0;
+                }
+        }
+
        
     }
 
@@ -95,10 +125,37 @@ const [shown, setIsShown] = useState(false)
                     <div className="textWrapper">
                     {props.text}
                     </div>
+                    <div className="description">
+                    {props.description}
+                    </div>
+                    <div>
+                   {console.log(props.stack.arr[0])}
+                   
+                            {Array.from(props.stack.arr).map((item)=>{
+                                return(
+                                <span className="stack">
+                                    {item}
+                                </span>
+                                )
+
+                            })}
+              
+                    </div>
+                    <div className="rep">
+                    <a href={props.rep }><img src={repo} alt="github"></img></a>
+                    </div>
+                    <div className="fig">
+                    {props.fig ?
+                    <a href={props.fig }><img src={figma} alt="fig"></img></a> :
+                    <></>
+                
+                }
+                    </div>
+
                 </div>
 
                 {shown === true ? 
-                    <button style={{'z-index':'1000'}}>See project</button>
+                    <button style={{'z-index':'1000'}}>  <a href={props.link}>See project</a></button>
                     :
                     <button style={{'z-index':'-999'}}>See project</button>
               }

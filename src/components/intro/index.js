@@ -16,12 +16,16 @@ justify-content: flex-end;
 
 
 @media only screen and (max-width: 1026px) {
-    font-size: 1.5em;
-    height: 100vh;
-    align-items: center;
-    justify-content: center;
+    font-size: 2em;
+  
 
     }
+
+    @media only screen and (max-width: 600px) {
+        font-size: 1.3em;
+      
+    
+        }
 
 .container{
     width: 100%;

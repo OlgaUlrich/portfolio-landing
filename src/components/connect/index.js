@@ -79,7 +79,7 @@ align-items: flex-start;
     width: 60%;
     display: flex;
     justify-content: flex-start;
-    align-items: flex-start;
+    align-items: center;
     flex-direction: column;
 
     @media only screen and (max-width: 1026px) {
@@ -95,6 +95,7 @@ align-items: flex-start;
         flex-direction: column;
         width: 100%;
         height: 80%;
+ 
 
         label{
             margin-top: 1em;
@@ -107,7 +108,7 @@ align-items: flex-start;
             padding-top: 1em;
             padding-left: 1em;
             padding-bottom: 1em;
-            border-radius: 3px;
+            border-radius: 1em;
             border: 3px solid ${global.formColor};
             color: #ffffff;
             font-family: 'inter';
@@ -122,7 +123,7 @@ align-items: flex-start;
             padding-top: 1em;
             background-color: ${global.formColor};
             min-height: 150px;
-            border-radius: 3px;
+            border-radius: 1em;
             border: 3px solid ${global.formColor};
             color: #ffffff;
             font-family: 'inter';
@@ -131,8 +132,18 @@ align-items: flex-start;
         textarea:focus { 
                 border-color:#ffffff;
              }
+        
+             .btWrapper{
+                 width: 100%;
+                 display: flex;
+                 justify-content: center;
+                 align-items: center;
+
+             }
         button{
             margin-top: 3em;
+            width: 30%;
+            
         }
         .counter{
            display: flex;
@@ -246,11 +257,13 @@ export const ConnectMe = () =>{
           <div className="Left">
              
 
-                Do you want to ask me something? <br />
+                Any questions? <br />
                 Just ask me via the contact form <br />
-
-                or <br />
-                WhatsApp<text className="accentText">/</text>Phone:<text className="accentText">+41 79 470 84 99</text>
+                <br />
+                <span>or   <text className="accentText">/</text></span><br />
+                <br />
+               
+                Phone:<text className="accentText">+41 79 470 84 99</text>
 
 
                 
@@ -320,9 +333,9 @@ export const ConnectMe = () =>{
                                    
                                    <span>{countNum}</span></div>
                               
-              
+                <div className="btWrapper">
                     <button type="submit" disabled={isSubmitting}>Send message</button>
-
+                </div>
                  </form>
                 
                } 
