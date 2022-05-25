@@ -141,16 +141,21 @@ const [shown, setIsShown] = useState(false)
                             })}
               
                     </div>
-                    <div className="rep">
+                    <div className="rep" style={{"display":"flex"}}>
                     <a href={props.rep }><img src={repo} alt="github"></img></a>
-                    </div>
-                    <div className="fig">
+
+                    <div className="fig" style={{"paddingLeft":"1rem"}}>
                     {props.fig ?
                     <a href={props.fig }><img src={figma} alt="fig"></img></a> :
                     <></>
                 
-                }
+                    }
                     </div>
+
+
+
+                    </div>
+       
 
                 </div>
 
