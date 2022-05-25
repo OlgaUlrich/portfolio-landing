@@ -7,7 +7,9 @@ import two from './svgs/2.svg'
 import three from './svgs/3.svg'
 import four from './svgs/4.svg'
 import docker from './svgs/docker.svg' 
-import list from './svgs/file.svg' 
+import list from './svgs/file.svg'
+import sass from './svgs/sass.svg'
+import sc from './svgs/styled_comp.png'
 
 import six from './svgs/6.svg'
 
@@ -51,6 +53,16 @@ width: 35%;
     width:100%;
     padding-top: 0;
     
+    }
+
+    .btWrapper{
+        display: flex;
+        flex-direction: column;
+
+        button{
+            margin-top:1rem;
+        }
+
     }
 }
 
@@ -107,22 +119,28 @@ export const AboutMe = () =>{
           <h2>About me</h2>
 
           My name is Olga <br/>
-          I used to work as a SEO specialist. Former student of SIT Academy.
+          I used to work as a SEO specialist. I am former student of SIT Academy.
            <br/>
            <br/>
            <br/>
-           I'm currently looking for a full-time role as a junior <text className="accentText">/</text> intern Frontend developer!
+           Currently I am looking for a full-time role as a junior <text className="accentText">/</text> intern Frontend developer!
            <br/>
            <br/>
            <br/>
 
-         
+         <div className="btWrapper">
            <button className="grayBtn" bgColor="pink">
            <img width="20px"
            src={list}
             />
-                <a href="./assets/CV-Olga_Ulrich.pdf" download>Take a look at my resume</a> </button>
-           
+                <a href="./assets/CV-Olga_Ulrich_EN.pdf" download>Take a look at my resume EN</a> </button>
+
+                <button className="grayBtn" bgColor="pink">
+           <img width="20px"
+           src={list}
+            />
+                <a href="./assets/CV-Olga_Ulrich_DE.pdf" download>Take a look at my resume DE</a> </button>
+                </div>
           </div>
 
 
@@ -141,6 +159,8 @@ export const AboutMe = () =>{
                 <MyStackCard svgUrl={docker} Name={'Docker'} />
                 <MyStackCard svgUrl={four} Name={'React'} />
                 <MyStackCard svgUrl={six} Name={'Figma'} />
+                <MyStackCard svgUrl={sass} Name={'Saas'} />
+                <MyStackCard svgUrl={sc} Name={'Styled Components'} />
                 </div>
 
         
