@@ -46,11 +46,13 @@ html{
 }
 h2{
     font-weight: 800;
-    font-size: 2em;
+    font-family: 'roboto-slab';
+    font-size: 1.5em;
     text-transform:uppercase;
 }
 h3{
     font-weight: 600;
+    font-family: 'roboto-slab';
     font-size: 1.5em;
     text-transform:uppercase;
 }

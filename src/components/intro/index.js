@@ -10,7 +10,7 @@ width: 100%;
 display: flex;
 flex-direction: column;
 text-transform: uppercase;
-font-size: 2.5em;
+font-size: 1.5em;
 align-items: center;
 justify-content: flex-end;
 
