@@ -63,13 +63,7 @@ const Wrapper = styled.div`
         img{
             width:1.5rem;
         }
-        .rep{
-                a{
-                    img{
-                         fill: #fff;
-                    }
-                }
-        }
+
 
         .stack{
             background-color: ${global.colorAccent};
