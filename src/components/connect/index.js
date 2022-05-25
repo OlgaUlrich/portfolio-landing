@@ -318,7 +318,7 @@ export const ConnectMe = () =>{
                     <textarea id="message"
                                name="message"
                                placeholder="Your message no longer than 250 char"
-                               value={values.message}
+                               value={values.message.substring(0, 250)}
                                onChange={handleChange}
                                >
                                  

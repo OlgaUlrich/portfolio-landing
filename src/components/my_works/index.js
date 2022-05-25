@@ -68,7 +68,8 @@ margin-bottom: 5%;
 .gridBlock{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-row-gap: 4rem;
+    grid-row-gap: 6rem;
+
     grid-column-gap: 2rem;
     width: 100%;
     height: 100%;
