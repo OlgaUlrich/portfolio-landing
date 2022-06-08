@@ -151,7 +151,7 @@ export const IntroScreen = () =>{
               <br/>I am a beginner programmer.
               <br/>
               <br/>
-              I specialize in <text className="accentText">frontend</text>   
+              I am specialized in <text className="accentText">frontend</text>   
               <br/>
               development with <text className="accentText">react</text>, <text className="accentText">redux</text>
               <br/>
