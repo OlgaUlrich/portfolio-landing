@@ -119,7 +119,7 @@ export const AboutMe = () =>{
           <h2>About me</h2>
 
           My name is Olga <br/>
-          I used to work as a SEO specialist. I am former student of SIT Academy.
+          I am a SEO specialist and a former student of SIT Academy.
            <br/>
            <br/>
            <br/>
