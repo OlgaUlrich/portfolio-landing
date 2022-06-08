@@ -111,7 +111,7 @@ export const MyWorks = () =>{
         
                <div className=""></div> 
                 <div className="content-wrapper">
-                <h2>My latest works</h2>
+                <h2>My latest projects</h2>
                 <div className="gridBlock">
                        <Card text={'Template for HealthApp'} image={fourth} description="Laconic template is done with SASS and Splide js library" link="https://inquisitive-shortbread-32c289.netlify.app/" stack={{arr:["SASS", "Splide js"]}} fig="https://www.figma.com/file/EWmzcVkd7qbP5Nf7iMvuqP/Trafalgar-Landing-Page" rep="https://github.com/OlgaUlrich/Trafalgar_template"/>
                        <Card text={'Hangman'} image={third} description="Legendary game is written on JS and uses random-word-api for word generation" link="https://nimble-griffin-d03b1e.netlify.app/" stack={{arr:["JS", "Rest API"]}} rep="https://github.com/OlgaUlrich/hangman_js/"/>
